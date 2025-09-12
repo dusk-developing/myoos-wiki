@@ -1,4 +1,5 @@
 import { defineUserConfig } from "vuepress";
+import { hopeTheme } from "vuepress-theme-hope";
 
 import theme from "./theme.js";
 
@@ -6,10 +7,10 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "文档演示",
-  description: "vuepress-theme-hope 的文档演示",
+  title: "MYOOS Wiki",
+  description: "MYOOS Algorithm Wiki",
 
-  theme,
+  theme: hopeTheme({}),
 
   // 和 PWA 一起启用
   // shouldPrefetch: false,
